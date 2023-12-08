@@ -1,0 +1,87 @@
+﻿title: DKStart1
+tags:
+---
+//This is the Player's conversation with 2 NPCs, Dhruv and Kartheek, students of MSc VR batch of 2022-23.
+
+// Is the conversation with player finished?
+<<declare $dk_convo_over = false as bool>>
+
+Player: Oh hi guys, how are you? its been a long time seeing you guys #line:Player-01 
+Dhruv: Oh i am amazing #line:Dhruv-01 
+Kartheek: I am good, how are you doing? How do you find the course so far? #line:kartheek-01 
+Player: i am good too. im really loving it. they are teaching a lot of stuff. #line:Player-02 
+Dhruv: what is new this time? #line:Dhruv-02 
+
+-> Player: Oh we will be taught Mixed reality concepts. #line:Player-03-A 
+    Kartheek: what all things have they taught you about MR? #line:kartheek-02 
+	Player: oH there is this Ai module, in that Ted taught us to use MR for the scene. #line:Player-04 
+	Dhruv: Oh wow, can you tell us more about it? #line:Dhruv-03 
+	Player: yeah unity has released a new Mixed reality template. so it uses the meta quest 3 capabilities.  #line:Player-05 
+	Kartheek: Can you show us how it works? #line:kartheek-03 
+	Player: Ofcourse ofcourse. I am using that feature right now, you will see it soon. #line:Player-06 
+-> Player: This time we are being taught how to integrate AI in VR and MR. #line:Player-03-B 
+    Kartheek: Ai? wow thats amazing. #line:kartheek-04 
+	Dhruv: Is it like AI Characters and all? #line:Dhruv-04 
+	Player: Yes! AI characters, and even lip syncing module is also there. Its really cool.  #line:Player-07 
+	Kartheek: Will you have an assignment for it? #line:kartheek-05 
+	Player: Oh yes we do. You are actually in it right now!  #line:Player-08 
+
+Dhruv: how are other assignments going? #line:Dhruv-05 
+-> Player: Eh, i am doing okay in them. #line:Player-09-A 
+    Kartheek: oh im sorry to hear that. Why so? #line:kartheek-06 
+	Player: I am still learning the essentials and im trying to get well equipped with the concepts soon. Hopefully i will do much better in the next ones. #line:Player-10 
+	Dhruv: Ofcourse you will, dont worry. And if you need help, why dont you talk to Ted and Seb? #line:Dhruv-06 
+	Player: Yes yes, i take help from them a lot. They are really helpful. #line:Player-11 
+	Kartheek: Yes they are. And also, dont hesitate to ask us as well if anything. #line:kartheek-07 
+	Dhruv: Yeah absolutely. #line:Dhruv-07 
+	Player: Aww Thank you guys. #line:Player-12 
+-> Player: Yeah its going good so far. #line:Player-09-B 
+    Dhruv: How do you find them? are they any difficult? #line:Dhruv-08 
+	Player: um not really, they test our knowledge really well. Its just that sometimes we have to rush them in because of the tight deadlines. #line:Player-13 
+	Kartheek: Yeah that happens. But hey, you are getting some training for the corporate world already. #line:kartheek-08 
+	Player: I know right! Ted and Seb said the same thing the other day. #line:Player-14 
+-> Player: oh i am killing it. #line:Player-09-C 
+	Kartheek: Ofcourse you are! You are smart like that. #line:kartheek-09 
+	Player: Aww you guys!  #line:Player-15 
+	Dhruv: Learn how to take a compliment girl! #line:Dhruv-09 
+
+Dhruv: By the way, how are Ted, Seb and Gareth doing anyways? #line:Dhruv-10 
+Kartheek: Oh and peter too #line:kartheek-10 
+Player: Everyone is doing amazing. We are more students than your batch now. i hope we dont trouble them a lot. #line:Player-16 
+Dhruv: Eh dont worry about it.  #line:Dhruv-11 
+Kartheek: Okay then, we gotta run. See you around. #line:kartheek-11 
+Dhruv: Yes talk to you later. #line:Dhruv-12 
+Player: Yes bye guys! #line:Player-17 
+
+//set the var to true, so that we can send them away and bring in the next npc
+<<set $dk_convo_over to true>>
+<<CallAnusha AnushaSpotWalking>>
+===
+
+title: AStart2
+tags:
+---
+//This is the Player's conversation with 1 NPCs, Anusha, who is a friend from the accomodation.
+
+// Is the conversation with player finished?
+<<declare $a_convo_over = false as bool>>
+
+Anusha: Hey there! #line:anu-01 
+Player: Hey where are you coming from? #line:Player-18 
+Anusha: ah i just came back from uni. im really tired. #line:anu-02 
+Player: oh yes me too. i want the weekend to come already.  #line:Player-19 
+Anusha: speaking of weekend, do you want to hangout ? #line:anu-03 
+
+-> Player:I am really sorry,i cant. i have to pack for my trip next week. #line:Player-20-A 
+    Anusha: aww. no worries though. #line:anu-04 
+	Player: i am really sorry. we will go out once im back in a few days. My treat! #line:Player-21 
+	Anusha: Done! ill hold you to that. Have an safe trip. #line:anu-05 
+    Player: Thank you! see you soon. #line:Player-22 
+-> Player: Yes definitely. i need to have fun. #line:Player-20-B
+    Anusha: Superb then! Lets go to the Winter wonderland? #line:anu-06 
+	Player: OH yes! i have been wanting to go. #line:Player-23 
+	Anusha: Then its fixed. Lets go around 7pm this saturday? #line:anu-07 
+	Player: Its a date! #line:Player-24 
+	Anusha: Bye then! #line:anu-08 
+		
+===
